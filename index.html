@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js"></script>
+</head>
+
+<body>
+    <div>
+        <div class="screen-box">
+            <p id="screen" class="screen"></p>
+        </div>
+        <div class="numpad">
+            <table cellspacing="15">
+                <tr>
+                    <td onclick="clearAll()">C</td>
+                    <td onclick="reverse()">+/-</td>
+                </tr>
+                <tr>
+                    <td onclick="enter('7')">7</td>
+                    <td onclick="enter('8')">8</td>
+                    <td onclick="enter('9')">9</td>
+                    <td onclick="enter('+')">+</td>
+                </tr>
+                <tr>
+                    <td onclick="enter('4')">4</td>
+                    <td onclick="enter('5')">5</td>
+                    <td onclick="enter('6')">6</td>
+                    <td onclick="enter('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="enter('1')">1</td>
+                    <td onclick="enter('2')">2</td>
+                    <td onclick="enter('3')">3</td>
+                    <td onclick="enter('*')">*</td>
+                </tr>
+                <tr>
+                    <td onclick="enter('0')">0</td>
+                    <td onclick="enter('.')">.</td>
+                    <td onclick="enter('/')">/</td>
+                    <td class="red-btn" onclick="calculateAll()">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
